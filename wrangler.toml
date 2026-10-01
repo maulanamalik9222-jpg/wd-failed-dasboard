@@ -1,0 +1,16 @@
+name = "wd-failed-dashboard"
+main = "src/worker.js"
+compatibility_date = "2026-10-01"
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+run_worker_first = ["/api/*"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "wd-dashboard-db"
+database_id = "GANTI_DENGAN_DATABASE_ID"
+
+[vars]
+APP_NAME = "WD Failed Dashboard"
