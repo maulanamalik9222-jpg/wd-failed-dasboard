@@ -9,7 +9,7 @@ run_worker_first = ["/api/*"]
 
 [[d1_databases]]
 binding = "DB"
-database_name = "wd-dashboard-db"
+database_name = "wd-dasboard-db"
 database_id = "8a28f6a8-5cc5-4714-a2c2-5aadd67f42ea"
 
 [vars]
