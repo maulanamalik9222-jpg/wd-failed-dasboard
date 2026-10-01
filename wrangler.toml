@@ -13,4 +13,4 @@ database_name = "wd-dasboard-db"
 database_id = "8a28f6a8-5cc5-4714-a2c2-5aadd67f42ea"
 
 [vars]
-APP_NAME = "WD Failed Dashboard"
+APP_NAME = "WD Failed dasboard"
