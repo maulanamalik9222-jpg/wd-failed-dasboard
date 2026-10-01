@@ -8,9 +8,22 @@
 <link rel="stylesheet" href="/style.css">
 </head>
 <body>
+<div class="shell">
+<aside class="sidebar">
+  <div class="brand"><div class="brand-mark">WD</div><div><div class="eyebrow">OPERATIONS</div><strong>WD Dashboard</strong></div></div>
+  <nav class="side-nav">
+    <button class="nav-item active" data-section="dashboard"><span class="nav-ico">▦</span><span>Dashboard</span></button>
+    <button class="nav-item" data-section="transaction"><span class="nav-ico">▤</span><span>Transaction</span></button>
+    <button class="nav-item" data-section="search"><span class="nav-ico">⌕</span><span>Transaction Search</span></button>
+    <button class="nav-item" data-section="settlement"><span class="nav-ico">▥</span><span>Settlement</span></button>
+    <button class="nav-item" data-section="delay"><span class="nav-ico">□</span><span>Settlement Delay</span></button>
+  </nav>
+  <div class="sidebar-bottom"><div class="side-caption">STAFF OPERATIONS</div><button id="logoutBtn" class="ghost hidden side-logout">Keluar</button></div>
+</aside>
+<section class="workspace">
 <header class="topbar">
-  <div><div class="eyebrow">OPERATIONS</div><h1>WD Failed Dashboard</h1></div>
-  <button id="logoutBtn" class="ghost hidden">Keluar</button>
+  <div><div class="eyebrow">OPERATIONS / WITHDRAWAL</div><h1>WD Failed Dashboard</h1></div>
+  <div class="top-actions"><span class="live-pill"><span></span> LIVE</span></div>
 </header>
 <main class="container">
   <section id="loginCard" class="card login-card">
@@ -24,8 +37,7 @@
 
   <section id="app" class="hidden">
     <div class="page-head">
-      <div><h2>Monitoring WD Failed</h2><p>Import data, cari rekening, lalu update status pencairan.</p></div>
-      <div class="live-pill"><span></span> LIVE</div>
+      <div><h2>Withdrawal Operations</h2><p>Monitoring transaksi WD gagal, pencairan, refund, dan status proses.</p></div>
     </div>
 
     <div class="stats" id="stats"></div>
@@ -43,7 +55,7 @@
 
     <section class="card data-card">
       <div class="section-head compact">
-        <div><div class="section-kicker">DATA WD</div><h2>Daftar Transaksi</h2><p>Kolom lengkap dan bisa digeser ke kanan di HP.</p></div>
+        <div><div class="section-kicker">TRANSACTION DATA</div><h2>Daftar Transaksi WD</h2><p>Nama kolom mengikuti data sumber: No., Date, Amount, Bank Code, Bank Name, Bank No, Account Name, Ref, Vendor Id, Status, Datetime, Balance revert.</p></div>
         <button id="refreshBtn" class="secondary">↻ Refresh</button>
       </div>
       <div class="toolbar">
@@ -54,6 +66,8 @@
     </section>
   </section>
 </main>
+</section>
+</div>
 <dialog id="detailDialog"><form method="dialog" class="dialog-card"><button class="close" value="cancel">×</button><div id="detail"></div></form></dialog>
 <script src="/app.js" defer></script>
 </body>
