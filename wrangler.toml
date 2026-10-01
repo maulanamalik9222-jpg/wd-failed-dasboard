@@ -1,4 +1,4 @@
-name = "wd-failed-dasboard"
+name = "wd-failed-dashboard"
 main = "src/worker.js"
 compatibility_date = "2026-10-01"
 
@@ -9,8 +9,8 @@ run_worker_first = ["/api/*"]
 
 [[d1_databases]]
 binding = "DB"
-database_name = "wd-dasboard-db"
+database_name = "wd-dashboard-db"
 database_id = "8a28f6a8-5cc5-4714-a2c2-5aadd67f42ea"
 
 [vars]
-APP_NAME = "WD Failed dasboard"
+APP_NAME = "WD Failed Dashboard"
