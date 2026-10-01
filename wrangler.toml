@@ -1,4 +1,4 @@
-name = "wd-failed-dashboard"
+name = "wd-failed-dasboard"
 main = "src/worker.js"
 compatibility_date = "2026-10-01"
 
